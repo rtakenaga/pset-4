@@ -21,4 +21,11 @@ while (lowBound > upBound){
   }
 }
 
-if
+if (lowBound % 2 === 0){
+  for (let x = lowBound; x <= upBound; x = x+2){
+  sum = sum + x;
+  }
+} else{
+
+}
+}
