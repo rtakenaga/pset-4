@@ -1,31 +1,30 @@
 const readlineSync = require("readline-sync");
 
-
 const MIN = Number.MIN_SAFE_INTEGER;
 const MAX = Number.MAX_SAFE_INTEGER;
 
 
-let lowBound = 1;
-let upBound = 0;
+let lowerBound = 1;
+let upperBound = 0;
 let sum = 0;
 let x = 0;
 
+console.log();
+while (lowerBound > upperBound || lowerBound < MIN || upperBound > MAX || !Number.isInteger(lowerBound) || !Number.isInteger(upperBound)) {
+  lowerBound = Number(readlineSync.question("Lower bound: "));
+  upperBound = Number(readlineSync.question("Upper bound: "));
+}
 
-while (lowBound > upBound){
-
-  const lowBound = Number(readlineSync.question("Lower bound: "));
-  const upBound = Number(readlineSync.question("Upperbound: "));
-
-  if (lowBound < MIN || upBound > MAX){
-    console.log ("\nInvalid");
+if (lowerBound % 2 === 0) {
+  for (let i = lowerBound; i <= upperBound; i = i + 2) {
+    sum = sum + i;
+  }
+} else {
+  for (let i = lowerBound +1; i <= upperBound; i = i + 2) {
+    sum = sum + i;
   }
 }
 
-if (lowBound % 2 === 0){
-  for (let x = lowBound; x <= upBound; x = x+2){
-  sum = sum + x;
-  }
-} else{
+sum = (sum).toLocaleString("en", { minimumFractionDigits: 0, maximumFractionDigits: 2});
 
-}
-}
+console.log("\n" + sum + ".");
