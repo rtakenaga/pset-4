@@ -26,3 +26,4 @@ while (x <= Math.floor(Math.sqrt(number))) {
 }
 //Display
 console.log("\n" + finalResult + "\n");
+console.log();

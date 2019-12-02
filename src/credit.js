@@ -73,3 +73,4 @@ while (creditCard > 0) {
       break;
     }
 }
+console.log();

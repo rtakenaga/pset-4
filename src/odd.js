@@ -24,3 +24,4 @@ while (integer > 0) {
 
 //Display
 console.log("\n" + print + ".")
+console.log();

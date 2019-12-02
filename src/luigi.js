@@ -38,3 +38,4 @@ while (height > 1) {
 }
 
 console.log()
+console.log();

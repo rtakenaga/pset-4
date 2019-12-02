@@ -23,3 +23,4 @@ let print = (sum / total).toLocaleString("en", { minimumFractionDigits: 3, maxim
 
 //Display
 console.log("\n" + print + ".");
+console.log();

@@ -31,3 +31,4 @@ if (boolean === false){
 } else if (boolean === true){
   console.log ("\nPrime.")
 }
+console.log();

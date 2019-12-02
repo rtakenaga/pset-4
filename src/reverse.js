@@ -18,7 +18,7 @@ while (integer <= 0 || integer > MAX || !Number.isInteger(integer)){
 //Compute
 while (integer > 0){
   let i = integer % 10;
-  
+
   integer = Math.floor(integer / 10);
 
   if (integer > 0) {
@@ -30,3 +30,4 @@ while (integer > 0){
 
 //Display
 console.log("\n" + print);
+console.log();

@@ -29,3 +29,4 @@ sum = (sum).toLocaleString("en", { minimumFractionDigits: 0, maximumFractionDigi
 
 //Display
 console.log("\n" + sum + ".");
+console.log();

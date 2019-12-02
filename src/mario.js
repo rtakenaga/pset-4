@@ -26,3 +26,4 @@ while (height > 1) {
   var space = space1
 }
 console.log()
+console.log();
